@@ -7,6 +7,7 @@ class Person {
     public function __construct($name, $age) {
         $this->name = $name;
         $this->age = $age;
+        // self專門使用於類內部的方法，代替類名的寫法加上::，用戶方便修改類名時使用
         self::$count++;
     }
       // 解構子
